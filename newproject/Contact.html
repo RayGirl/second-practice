@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="Contact.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.jpg">
+</head>
+<body>
+    <div class="navbar">
+        <table>
+            <tr>
+                <th><a href="Home.html">Home</a></th>
+                <th><a href="About.html">About Me</a></th>
+                <th><a href="Proj ects.html">Projects</a></th>
+            </tr>
+        </table>
+    </div>
+    <h2>Feel free to reach out to me on the following platforms:</h2>
+    <p>Linkedin:</p>
+    <a href="Linkedin">www.linkedin.com/in/mutmainah-ojutalayo-83a16622a</a>
+    <p>Twitter</p>
+
+    <h2>Leave Me A Message:</h2>
+    <form id="contact-form" method="post" action="contact.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      
+        <input type="submit" value="Send">
+      </form>
+</body>
+</html>

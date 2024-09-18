@@ -1,0 +1,61 @@
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-family: cursive;
+  }
+  
+  .month {
+    grid-column: 1 / -1;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: purple;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px ;
+  }
+  
+  .day-of-week {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .day-of-week div {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .days {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .day {
+    background-color: #fff;
+    padding: 10px;
+    border: 3px solid purple;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  /* add some color to the days */
+  .day:nth-child(odd) {
+    background-color: #FF69B4;
+  }
+  
+  .day:nth-child(even) {
+    background-color: #32CD32;
+  }
+  
+  /* highlight today's date */
+  .day.today {
+    background-color: #ff69b4;
+    color: #fff;
+  }
